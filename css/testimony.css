@@ -1,0 +1,36 @@
+.testimony-description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 40px 0;
+}
+.testimony-description .title {
+  align-self: flex-start;
+}
+.testimony-img {
+  text-align: center;
+}
+.testimony-img img {
+  vertical-align: middle;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .testimony {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .testimony-description {
+    max-width: 450px;
+  }
+  .testimony.par .testimony-img {
+    order: 2;
+  }
+  .testimony-img img {
+    width: 100%;
+    height: auto;
+  }
+}

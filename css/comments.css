@@ -1,0 +1,29 @@
+.comments {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding: 40px 0;
+  font: var(--headLine5);
+}
+
+.comments p {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 900px;
+}
+
+.comments p:first-child {
+  font-weight: normal;
+}
+.comments div {
+  text-align: center;
+}
+.comments div img {
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 768px) {
+  .comments {
+    padding: 200px 0;
+  }
+}
