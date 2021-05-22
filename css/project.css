@@ -1,36 +1,48 @@
-.testimony-description {
+.project-description {
   display: flex;
   flex-direction: column;
   gap: 16px;
   padding: 40px 0;
 }
-.testimony-description .title {
+.project-description .title {
   align-self: flex-start;
 }
-.testimony-img {
+.project-img {
   text-align: center;
 }
-.testimony-img img {
+.project-img img {
   vertical-align: middle;
   max-width: 100%;
   height: auto;
 }
 
+.project-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
 @media screen and (min-width: 768px) {
-  .testimony {
+  .project {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 24px;
   }
-  .testimony-description {
+  .project-description {
     max-width: 450px;
   }
-  .testimony.par .testimony-img {
+  .project.par .project-img {
     order: 2;
   }
-  .testimony-img img {
+  .project-img img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .project-buttons {
+    flex-direction: row;
   }
 }
